@@ -2,10 +2,10 @@
 set -e
 
 # Define the container name
-CONTAINER_NAME="my-portfolio-container"
+CONTAINER_NAME="cabalu-website-container"
 
 # Define image name
-IMAGE_NAME="richeb/portfolio:v1"
+IMAGE_NAME="richeb/cabalu-website:v1"
 
 # Check if the container already exists
 if docker ps -a --format '{{.Names}}' | grep -q "^$CONTAINER_NAME$"; then
