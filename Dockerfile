@@ -8,7 +8,7 @@ WORKDIR /usr/share/nginx/html/
 COPY . .
 
 # Expose port 80 to allow external access
-EXPOSE 8080
+EXPOSE 80
 
 # Command to start Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
