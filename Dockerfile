@@ -6,7 +6,7 @@ WORKDIR /usr/share/nginx/html/
 
 # Copy the contents of the html directory into the container
 # COPY . .
-COPY caportal.saginfotech.com/caportal/ca-template-70/index.html .
+COPY . .
 
 
 # Expose port 80 to allow external access
