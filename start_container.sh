@@ -1,13 +1,16 @@
 #!/bin/bash
 set -e
 
+# git pull
+git pull
+
 # Define the container name
 CONTAINER_NAME="cabalu-website-container"
 
 # Define image name
 IMAGE_NAME="richeb/cabalu-website:v1"
 
-#docker build
+# docker build
 
 docker build --no-cache -t "$IMAGE_NAME" .
 
