@@ -7,6 +7,11 @@ CONTAINER_NAME="cabalu-website-container"
 # Define image name
 IMAGE_NAME="richeb/cabalu-website:v1"
 
+#docker build
+
+docker build --no-cache -t "$IMAGE_NAME" .
+
+
 # Pushing image to docker hub
 docker push  "$IMAGE_NAME"
 
