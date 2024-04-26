@@ -7,6 +7,9 @@ CONTAINER_NAME="cabalu-website-container"
 # Define image name
 IMAGE_NAME="richeb/cabalu-website:v1"
 
+# Pushing image to docker hub
+docker push "$" "$IMAGE_NAME"
+
 # Check if the container already exists
 if docker ps -a --format '{{.Names}}' | grep -q "^$CONTAINER_NAME$"; then
     # If the container exists, stop and remove it
