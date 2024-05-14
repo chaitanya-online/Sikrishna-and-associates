@@ -48,7 +48,7 @@ echo "container is up and running"
 
 #7 deleting unused docker images
 
-docker system prune
+echo "y" | docker system prune
 
 echo "Deleted old data"
 
