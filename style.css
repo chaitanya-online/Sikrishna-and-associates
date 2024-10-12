@@ -692,7 +692,7 @@ margin-left: 200%;
   left: 0;
   bottom: 0;
   top: 100%;
-  transition: all 0.3s;
+  transition: all 0.70s;
   z-index: -1;
 }
 
@@ -878,7 +878,7 @@ text-align: center;
 }
 
 .services .icon-box:hover {
-  border-color: #fff;
+  border-color: #010101;
   box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
 }
 
