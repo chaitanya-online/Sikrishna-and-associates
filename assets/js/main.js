@@ -287,4 +287,23 @@
    */
   new PureCounter();
 
+    /**
+   * ✅ Custom Mailto Contact Form Logic
+   */
+  const contactForm = select('#contactForm')
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault()
+
+      const name = select('#name').value.trim()
+      const email = select('#email').value.trim()
+      const subject = select('#subject').value.trim()
+      const message = select('#message').value.trim()
+
+      const mailtoLink = `mailto:ca.pbskm@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`
+
+      window.location.href = mailtoLink
+    })
+  }
+
 })()
